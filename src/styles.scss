@@ -1,0 +1,52 @@
+@import './styles-common';
+
+* {
+  box-sizing: border-box;
+}
+
+#app,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: gainsboro;
+  height: 100vh;
+  min-height: fit-content;
+}
+
+.demo {
+  @extend .display-flex;
+  @extend .flex-direction-column;
+  color: $font-color;
+  height: 100%;
+
+  .header {
+    @extend .display-flex;
+    @extend .flex-direction-column;
+    @extend .justify-content-center;
+    @extend .p1;
+    border-bottom: 1px solid $border-color;
+
+    height: 70px;
+
+    > * {
+      @extend .p0, .m0;
+    }
+  }
+
+  .content {
+    @extend .bb;
+    flex: 1;
+    background-color: white;
+  }
+
+  .footer {
+    @extend .display-flex;
+    @extend .flex-direction-column;
+    @extend .justify-content-center;
+    @extend .p1;
+    font-size: smaller;
+    height: 40px;
+  }
+}

@@ -1,0 +1,104 @@
+$border-color: rgb(82, 82, 82);
+$border-color-light: #cfcccc;
+$font-color: #2b6037;
+
+[role='Resizer'] {
+  > .split-sash-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after {
+      content: '';
+      background-repeat: no-repeat;
+      background-image: url(images/dragbar-handle.svg);
+      background-size: 21px 21px;
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      margin-left: -1px;
+      opacity: 0.3;
+      transition: opacity ease-in-out 150ms, margin-left ease-in-out 150ms,
+        width ease-in-out 150ms;
+    }
+
+    &.split-sash-content-active {
+      cursor: move;
+
+      &::after {
+        background-image: url(images/dragbar-handle-wide.svg);
+        background-size: 28px 21px !important;
+        width: 28px;
+        margin-left: 0;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &.react-split__sash--horizontal {
+    > .split-sash-content {
+      &::after {
+        margin-left: 0;
+        margin-top: -1px;
+        transform: rotate(90deg);
+      }
+
+      &.split-sash-content-active {
+        &::after {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+ }
+
+.bt {
+  border-top: 1px solid $border-color-light;
+}
+.br {
+  border-right: 1px solid $border-color-light;
+}
+.bb {
+  border-bottom: 1px solid $border-color-light;
+}
+.bl {
+  border-left: 1px solid $border-color-light;
+}
+.border-color-green {
+  border-color: #2b6037 !important;
+}
+
+.p0 {
+  padding: 0;
+}
+.p1 {
+  padding: 0.5rem;
+}
+.m0 {
+  margin: 0;
+}
+.m1 {
+  margin: 0.5rem;
+}
+
+.display-flex {
+  display: flex;
+}
+.display-inline-flex {
+  display: inline-flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
