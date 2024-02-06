@@ -35,7 +35,7 @@ const AppContentPane = () => {
           minSize={3}
           maxSize="50%"
         >
-          <div style={{ overflow: 'hidden', display: +sizes[0] > 12 ? 'block' : 'none', minWidth: 250 }}>Pane Left</div>
+          <div style={{ overflow: 'hidden', display: +sizes[0] > 12 ? 'block' : 'none', minWidth: 250 }}>Left Pane</div>
         </Pane>
         <div className="pane-right" style={{ ...layoutCSS }}>
           <Content />
