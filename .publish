@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#"demo:push": "cd dist && git init && git commit --allow-empty -m 'update split-pane-react demo' && git checkout -b gh-pages && git add . && git commit -am 'update split-pane-react demo' && git push git@github.com:jaosimt/split-pane-react-demo.git gh-pages --force",
+#"demo:publish": "yarn run demo:clean && yarn run demo:build && yarn run demo:push"
+
+if [[ ! -d ./dist ]]; then
+  echo -e "Build folder \"dist\" does not exist!"
+else
+  cd dist
+  git init
+  git checkout -b gh-pages
+  git add .
+  git commit -am 'update split-pane-react demo'
+  git push git@github.com:jaosimt/split-pane-react-demo.git gh-pages --force
+fi
