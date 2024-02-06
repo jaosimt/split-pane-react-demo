@@ -13,7 +13,7 @@
     "build": "webpack --config webpack.config.js --progress",
     "demo:clean": "rimraf dist node_modules",
     "demo:build": "yarn install && yarn run build",
-    "demo:push": "cd dist && git init && git commit --allow-empty -m 'update split-pane-react demo' && git checkout -b gh-pages && git add . && git commit -am 'update split-pane-react demo' && git push git@github.com:jaosimt-demo/split-pane-react.git gh-pages --force",
+    "demo:push": "cd dist && git init && git commit --allow-empty -m 'update split-pane-react demo' && git checkout -b gh-pages && git add . && git commit -am 'update split-pane-react demo' && git push git@github.com:jaosimt/split-pane-react-demo.git gh-pages --force",
     "demo:publish": "yarn run demo:clean && yarn run demo:build && yarn run demo:push"
   },
   "devDependencies": {

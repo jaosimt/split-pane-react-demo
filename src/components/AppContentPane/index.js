@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import SplitPane, { Pane } from 'split-pane-react';
+import React, {useState} from 'react';
+import SplitPane, {Pane} from 'split-pane-react';
 import Content from './../Content';
 import classNames from 'classnames';
 
@@ -19,7 +19,7 @@ const AppContentPane = () => {
   console.log(sizes[0]);
 
   return (
-    <div className="app-content-container" style={{ height: '100%' }}>
+    <div className={classNames('app-content-container', sizes[0] === 3 && 'opaque-left-pane-handle')} style={{ height: '100%' }}>
       <SplitPane
         resizerSize={7}
         split="vertical"
@@ -35,7 +35,7 @@ const AppContentPane = () => {
           minSize={3}
           maxSize="50%"
         >
-          <div style={{ overflow: 'hidden', display: 'block' }}>Pane Left</div>
+          <div style={{ overflow: 'hidden', display: +sizes[0] > 12 ? 'block' : 'none', minWidth: 250 }}>Pane Left</div>
         </Pane>
         <div className="pane-right" style={{ ...layoutCSS }}>
           <Content />

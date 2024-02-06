@@ -102,3 +102,15 @@ $font-color: #2b6037;
 .align-items-center {
   align-items: center;
 }
+
+.opaque-left-pane-handle {
+  [role='Resizer'] {
+    &.react-split__sash--vertical {
+      > .split-sash-content {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
