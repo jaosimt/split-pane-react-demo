@@ -10,7 +10,7 @@ export default function App() {
     <div className="demo">
       <div className="header">
         <h1>Split Pane React Demo</h1>
-        <h6>https://www.npmjs.com/package/split-pane-react</h6>
+        <h6><a href='https://www.npmjs.com/package/split-pane-react' target='_blank'>www.npmjs.com/package/split-pane-react</a></h6>
       </div>
       <div className="content">
         <AppContentPane />

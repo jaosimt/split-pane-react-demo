@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 import 'split-pane-react/esm/themes/default.css';
 import './styles.scss';
+import {DragbarHandle} from "../Content/tinyBits";
 
 const AppContentPane = () => {
   const [sizes, setSizes] = useState([200, 'auto']);
@@ -16,22 +17,25 @@ const AppContentPane = () => {
     justifyContent: 'center',
   };
 
-  console.log(sizes[0]);
+  const VerticalDragbarHandle = (index, active) => <DragbarHandle
+      index={index}
+      active={active}
+      orientation='vertical'
+      // onClick={() => {
+      //   console.log(sizes[index]);
+      //   setSizes([sizes[index] === 3 ? 'calc(50% - 1px)' : 3, 'auto'])
+      // }}
+  />
 
   return (
     <div className={classNames('app-content-container', sizes[0] === 3 && 'opaque-left-pane-handle')} style={{ height: '100%' }}>
       <SplitPane
+        sashRender={ VerticalDragbarHandle }
         resizerSize={7}
         split="vertical"
         sizes={sizes}
-        onChange={setSizes}
-      >
+        onChange={setSizes}>
         <Pane
-          className={classNames(
-            'border-color-light',
-            'p1',
-            +sizes[0] > 3 && 'br'
-          )}
           minSize={3}
           maxSize="50%"
         >

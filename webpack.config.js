@@ -34,6 +34,17 @@ module.exports = {
 				test: /\.(scss|css)$/,
 				use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
 			},
+			{
+				test: /\.svg$/,
+				use: [
+					{
+						loader: '@svgr/webpack',
+						options: {
+							native: false,
+						},
+					},
+				],
+			}
 		]
 	},
 	performance: { 
