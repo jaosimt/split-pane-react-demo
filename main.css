@@ -1,0 +1,325 @@
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/split-pane-react/esm/themes/default.css ***!
+  \***********************************************************************************************************************************************/
+.react-split {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  width: 100%; }
+
+.react-split__pane {
+  height: 100%;
+  position: absolute;
+  white-space: normal;
+  width: 100%;
+  overflow: hidden; }
+
+.react-split__sash {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: background-color 0.1s;
+  width: 100%;
+  z-index: 2; }
+
+.react-split__sash--disabled {
+  pointer-events: none; }
+
+.react-split__sash--vertical {
+  cursor: col-resize; }
+
+.react-split__sash--horizontal {
+  cursor: row-resize; }
+
+.react-split__sash-content {
+  width: 100%;
+  height: 100%; }
+
+.react-split__sash-content--active {
+  background-color: #175ede; }
+
+.react-split--dragging.react-split--vertical {
+  cursor: col-resize; }
+
+.react-split--dragging.react-split--horizontal {
+  cursor: row-resize; }
+
+body.react-split--disabled {
+  user-select: none; }
+
+.split-sash-content {
+  width: 100%;
+  height: 100%; }
+
+.split-sash-content.split-sash-content-vscode.split-sash-content-active {
+  background-color: #175ede; }
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/styles.scss ***!
+  \*****************************************************************************************************************************/
+.bt {
+  border-top: 1px solid #cfcccc; }
+
+.br {
+  border-right: 1px solid #cfcccc; }
+
+.bb {
+  border-bottom: 1px solid #cfcccc; }
+
+.bl {
+  border-left: 1px solid #cfcccc; }
+
+.border-color-green {
+  border-color: #2b6037 !important; }
+
+.p0 {
+  padding: 0; }
+
+.p1 {
+  padding: 0.5rem; }
+
+.m0 {
+  margin: 0; }
+
+.m1 {
+  margin: 0.5rem; }
+
+.display-flex {
+  display: flex; }
+
+.display-inline-flex {
+  display: inline-flex; }
+
+.flex-direction-column {
+  flex-direction: column; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-items-center {
+  justify-items: center; }
+
+.align-items-center {
+  align-items: center; }
+
+.dragHandle:hover:active {
+  opacity: 1 !important; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: underline; }
+
+[role="Resizer"] .split-sash-content {
+  width: 100%;
+  height: 100%; }
+  [role="Resizer"] .split-sash-content.sash-wrap-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s; }
+    [role="Resizer"] .split-sash-content.sash-wrap-line.active {
+      background-color: lightgray; }
+    [role="Resizer"] .split-sash-content.sash-wrap-line .line {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.2); }
+
+[role="Resizer"].react-split__sash--horizontal .split-sash-content {
+  flex-direction: column; }
+  [role="Resizer"].react-split__sash--horizontal .split-sash-content.sash-wrap-line .line {
+    height: 1px;
+    width: 100%; }
+
+[role="Resizer"].react-split__sash--vertical .split-sash-content.sash-wrap-line .line {
+  height: 100%;
+  width: 1px; }
+
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/AppContentPane/styles.scss ***!
+  \************************************************************************************************************************************/
+.bt {
+  border-top: 1px solid #cfcccc; }
+
+.br {
+  border-right: 1px solid #cfcccc; }
+
+.bb {
+  border-bottom: 1px solid #cfcccc; }
+
+.bl {
+  border-left: 1px solid #cfcccc; }
+
+.border-color-green {
+  border-color: #2b6037 !important; }
+
+.p0 {
+  padding: 0; }
+
+.p1 {
+  padding: 0.5rem; }
+
+.m0 {
+  margin: 0; }
+
+.m1 {
+  margin: 0.5rem; }
+
+.display-flex {
+  display: flex; }
+
+.display-inline-flex {
+  display: inline-flex; }
+
+.flex-direction-column {
+  flex-direction: column; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-items-center {
+  justify-items: center; }
+
+.align-items-center {
+  align-items: center; }
+
+.dragHandle:hover:active {
+  opacity: 1 !important; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: underline; }
+
+[role="Resizer"] .split-sash-content {
+  width: 100%;
+  height: 100%; }
+  [role="Resizer"] .split-sash-content.sash-wrap-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s; }
+    [role="Resizer"] .split-sash-content.sash-wrap-line.active {
+      background-color: lightgray; }
+    [role="Resizer"] .split-sash-content.sash-wrap-line .line {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.2); }
+
+[role="Resizer"].react-split__sash--horizontal .split-sash-content {
+  flex-direction: column; }
+  [role="Resizer"].react-split__sash--horizontal .split-sash-content.sash-wrap-line .line {
+    height: 1px;
+    width: 100%; }
+
+[role="Resizer"].react-split__sash--vertical .split-sash-content.sash-wrap-line .line {
+  height: 100%;
+  width: 1px; }
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
+  \**********************************************************************************************************/
+.bt {
+  border-top: 1px solid #cfcccc; }
+
+.br {
+  border-right: 1px solid #cfcccc; }
+
+.bb, .demo .content {
+  border-bottom: 1px solid #cfcccc; }
+
+.bl {
+  border-left: 1px solid #cfcccc; }
+
+.border-color-green {
+  border-color: #2b6037 !important; }
+
+.p0, .demo .header > * {
+  padding: 0; }
+
+.p1, .demo .header, .demo .footer {
+  padding: 0.5rem; }
+
+.m0, .demo .header > * {
+  margin: 0; }
+
+.m1 {
+  margin: 0.5rem; }
+
+.display-flex, .demo, .demo .header, .demo .footer {
+  display: flex; }
+
+.display-inline-flex {
+  display: inline-flex; }
+
+.flex-direction-column, .demo, .demo .header, .demo .footer {
+  flex-direction: column; }
+
+.justify-content-center, .demo .header, .demo .footer {
+  justify-content: center; }
+
+.justify-items-center {
+  justify-items: center; }
+
+.align-items-center {
+  align-items: center; }
+
+.dragHandle:hover:active {
+  opacity: 1 !important; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: underline; }
+
+[role="Resizer"] .split-sash-content {
+  width: 100%;
+  height: 100%; }
+  [role="Resizer"] .split-sash-content.sash-wrap-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s; }
+    [role="Resizer"] .split-sash-content.sash-wrap-line.active {
+      background-color: lightgray; }
+    [role="Resizer"] .split-sash-content.sash-wrap-line .line {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.2); }
+
+[role="Resizer"].react-split__sash--horizontal .split-sash-content {
+  flex-direction: column; }
+  [role="Resizer"].react-split__sash--horizontal .split-sash-content.sash-wrap-line .line {
+    height: 1px;
+    width: 100%; }
+
+[role="Resizer"].react-split__sash--vertical .split-sash-content.sash-wrap-line .line {
+  height: 100%;
+  width: 1px; }
+
+* {
+  box-sizing: border-box; }
+
+#app,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: gainsboro;
+  height: 100vh;
+  min-height: fit-content; }
+
+.demo {
+  color: #2b6037;
+  height: 100%; }
+  .demo .header {
+    border-bottom: 1px solid #525252;
+    height: 70px; }
+  .demo .content {
+    flex: 1;
+    background-color: white; }
+  .demo .footer {
+    font-size: smaller;
+    height: 40px; }
+
